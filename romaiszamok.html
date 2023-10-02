@@ -12,14 +12,16 @@
   function konvertal(a) {
     if (a == 1){
      return 'I';
-     }
-  
+	}
  }
   
-
   QUnit.module('konvertal teszt', function() {
     QUnit.test('egy', function(assert) {
       assert.equal(konvertal(1), 'I');
+    });
+	
+	QUnit.test('ketto', function(assert) {
+      assert.equal(konvertal(2), 'II');
     });
 	
 	
