@@ -30,23 +30,23 @@
 	 return 'V';
 	}
 	
-	else if(a == 10){
+	else if (a == 10){
 	 return 'X';
 	}
 	
-	else if(a == 50){
+	else if (a == 50){
 	 return 'L';
 	}
 	
-	else if(a == 100){
+	else if (a == 100){
 	 return 'C';
 	}
 	
-	else if(a == 500){
+	else if (a == 500){
 	 return 'D';
 	}
 	
-	else if(a == 1000){
+	else if (a == 1000){
 	 return 'M';
 	}
 	
@@ -72,6 +72,10 @@
 	
 	QUnit.test('ot', function(assert) {
       assert.equal(konvertal(5), 'V');
+    });
+	
+	QUnit.test('kilenc', function(assert) {
+      assert.equal(konvertal(9), 'IX');
     });
 	
 	QUnit.test('tiz', function(assert) {
