@@ -30,6 +30,7 @@
 	 return 'V';
 	}
 	
+	
  }
   
   QUnit.module('konvertal teszt', function() {
@@ -51,6 +52,10 @@
 	
 	QUnit.test('ot', function(assert) {
       assert.equal(konvertal(5), 'V');
+    });
+	
+	QUnit.test('tiz', function(assert) {
+      assert.equal(konvertal(10), 'X');
     });
 	
 	
